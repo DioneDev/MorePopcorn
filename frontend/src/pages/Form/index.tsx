@@ -32,7 +32,9 @@ function Form(){
                         </select>
                     </div>
                     <div className="myclass-form-btn-container">
-                        <button type="submit" className="btn btn-primary myclass-btn">Salvar</button>
+                        <button type="submit" className="btn btn-primary myclass-btn">
+                            Salvar
+                        </button>
                     </div>
                 </form >
                 <Link to="/">
