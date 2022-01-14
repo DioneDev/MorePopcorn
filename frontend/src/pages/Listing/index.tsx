@@ -1,4 +1,4 @@
-import MovieStars from "../../components/MovieStars";
+import MovieScore from "../../components/MovieScore";
 import Pagination from "../../components/Pagination";
 
 function Listing(){
@@ -6,7 +6,7 @@ function Listing(){
         // Usando Fragment <> </> porque a funcao aceita apenas 1 componemte
         <> 
             <Pagination />
-            <MovieStars />
+            <MovieScore />
         </>
     );
 }
