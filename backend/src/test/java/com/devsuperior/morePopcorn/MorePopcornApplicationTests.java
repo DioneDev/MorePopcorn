@@ -1,10 +1,10 @@
-package com.devsuperior.dsmovie;
+package com.devsuperior.morePopcorn;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DsmovieApplicationTests {
+class MorePopcornApplicationTests {
 
 	@Test
 	void contextLoads() {
