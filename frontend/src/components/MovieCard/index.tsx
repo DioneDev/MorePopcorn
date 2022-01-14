@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import MovieScore from "../MovieScore";
 
 function MovieCard(){
@@ -19,9 +20,13 @@ function MovieCard(){
 
                 <MovieScore />
 
-                <div className="btn btn-primary myclass-btn">
-                    Avaliar
-                </div>
+                <Link to={ `/form/${movie.id}` }>
+
+                    <div className="btn btn-primary myclass-btn">
+                        Avaliar
+                    </div>
+                </Link>
+
             </div>
         </div>
 
