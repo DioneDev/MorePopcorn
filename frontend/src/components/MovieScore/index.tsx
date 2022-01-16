@@ -1,10 +1,12 @@
 import MovieStars from "../MovieStars";
 import "./styles.css";
 
-function MovieScore(){
+type Props = {
+    score: number;
+    count: number;
+}
 
-    const score = 4.3;
-    const count = 25;
+function MovieScore({ score, count } : Props){
 
     return(
 
@@ -13,10 +15,10 @@ function MovieScore(){
                 {score > 0 ? score.toFixed(1) : "Seja o primeiro a avaliar este filme!"}
             </p>
 
-            <MovieStars />
+            <MovieStars score={score} />
 
             <p className="myclass-score-count">
-                {count} Avaliações
+                {count} avaliações
             </p>
         </div>
     );

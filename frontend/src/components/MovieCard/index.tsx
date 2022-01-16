@@ -7,16 +7,14 @@ type Props = {
 }
 
 function MovieCard({ movie } : Props){
-
    
     return(
-
         <div>
             <img className="myclass-movie-card-image" src={movie.image} alt={movie.title} />
             <div className="myclass-card-bottom-container">
                 <h3>{movie.title}</h3>
 
-                <MovieScore />
+                <MovieScore count={movie.count} score={movie.score} />
 
                 <Link to={ `/form/${movie.id}` }>
 
