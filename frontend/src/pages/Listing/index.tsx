@@ -1,16 +1,25 @@
 import axios from "axios";
+import { useEffect, useState } from "react";
 import MovieCard from "../../components/MovieCard";
 import Pagination from "../../components/Pagination";
+import { MoviePage } from "../../types/movie";
 import { BASE_URL } from "../../utils/requests";
 
 function Listing(){
 
-    // APAGAR APÓS TESTE
+    const[pageNumber, setPageNumber] = useState(0);
 
-    axios.get(`${BASE_URL}/movies`)
+    useEffect(() => {
+        axios.get(`${BASE_URL}/movies`)
         .then(responseBack => {
-            console.log(responseBack.data);
+            const data = responseBack.data as MoviePage;
+            console.log(data);
+            setPageNumber(data.number);
         });
+
+    }, []);
+
+    
 
     return(
         // Usando Fragment <> </> porque a funcao aceita apenas 1 componemte
