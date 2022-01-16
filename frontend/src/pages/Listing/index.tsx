@@ -30,10 +30,14 @@ function Listing(){
 
     }, [pageNumber]);
 
+    const handlePageChange = (newPageNumber : number) => {
+        setPageNumber(newPageNumber);
+    }
+
     return(
         // Usando Fragment <> </> porque a funcao aceita apenas 1 componemte
         <> 
-            <Pagination />
+            <Pagination page={page} onChange={handlePageChange} />
             
             <div className="container">
                 <div className="row">
