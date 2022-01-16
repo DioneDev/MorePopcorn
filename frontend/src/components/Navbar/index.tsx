@@ -8,7 +8,7 @@ function Navbar() {
             <div className="myclass-nav-content">
 
                 <h1>+Popcorn</h1>
-                <a href="https://github.com/DioneDev" target="_blank">
+                <a href="https://github.com/DioneDev" target="_blank" ref="link para github">
                     <div className="myclass-contact-container">
                         <GithubIcon />
                         <p className="myclass-contact-link">/DioneDev</p>
