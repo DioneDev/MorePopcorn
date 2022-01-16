@@ -25,7 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--color-button);
     cursor: pointer;
 }
 
@@ -45,7 +45,7 @@
 .myclass-pagination-container p {
     margin: 0;
     font-size: 12px;
-    color: var(--color-primary);
+    color: var(--color-button);
 }
 
 .myclass-flip-horizontal {
